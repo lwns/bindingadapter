@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="View">
+    <!-- require Command  to deal with view click event. -->
+    <attr name="onClick"/>
+    <!-- require boolean value to decide whether requestFocus for view. -->
+    <attr name="requestFocus"/>
+    <!-- require Command<Boolean>  to deal with view focus change event.Command would has params which means if view hasFocus.-->
+    <attr name="onFocusChange"/>
+    <attr format="integer" name="heightChange"/>
+    <!-- require Command<MotionEvent> -->
+    <attr name="onTouch"/>
+    <attr format="boolean" name="visible"/>
+    <attr format="boolean" name="inVisible"/>
+  </declare-styleable>
+
+  <declare-styleable name="TextView">
+    <!--require MovementMethod -->
+    <attr name="movementMethod"/>
+    <attr format="integer" name="rightImg"/>
+    <attr format="reference" name="lastMessageSummary"/>
+    <attr format="string" name="groupName"/>
+  </declare-styleable>
+
+  <declare-styleable name="EditText">
+    <!-- require boolean value to decide whether requestFocus for view. -->
+    <attr name="requestFocus"/>
+    <!--require Command<TextChangeDataWrapper> -->
+    <attr format="reference" name="beforeTextChangedCommand"/>
+    <!--require Command<TextChangeDataWrapper> -->
+    <attr format="reference" name="onTextChangedCommand"/>
+    <!--require Command<String> -->
+    <attr format="reference" name="afterTextChangedCommand"/>
+  </declare-styleable>
+
+  <declare-styleable name="AdapterView">
+    <!-- require ItemBinding  -->
+    <attr name="itemBinding"/>
+    <!-- require List<ViewModel> bind to ItemView to presentation.-->
+    <attr name="items"/>
+    <!-- require a adapter which type of BindingRecyclerViewAdapter<T> to AdapterView-->
+    <attr name="adapter"/>
+    <attr format="reference" name="dropDownItemView"/>
+    <attr format="reference" name="itemIds"/>
+    <attr format="reference" name="itemIsEnabled"/>
+    <!-- require Command<Integer> -->
+    <attr name="onScrollStateChanged"/>
+    <!-- require Command<ListViewScrollDataWrapper> -->
+    <attr name="onScrollChange"/>
+    <!-- require Command<Integer> count of list items-->
+    <attr format="reference" name="onLoadMore"/>
+    <!-- require BindingRecyclerViewAdapter.OnItemClickListener count of list items-->
+    <attr format="reference" name="onItemClick"/>
+
+    <!-- require ItemCount of adapter-->
+    <attr format="reference" name="itemCount"/>
+  </declare-styleable>
+
+  <declare-styleable name="ViewPager">
+    <!-- require ItemBinding -->
+    <attr name="itemBinding"/>
+    <!-- require List<ViewModel> bind to ItemView to presentation.-->
+    <attr name="items"/>
+    <!-- require a adapter which type of BindingRecyclerViewAdapter<T> to AdapterView-->
+    <attr name="adapter"/>
+    <!-- require PageTitles<T>-->
+    <attr format="reference" name="pageTitles"/>
+    <!--require Command<ViewPagerDataWrapper> -->
+    <attr format="reference" name="onPageScrolledCommand"/>
+    <!--require Command<Integer> -->
+    <attr format="reference" name="onPageSelectedCommand"/>
+    <!--require Command<Integer> -->
+    <attr format="reference" name="onPageScrollStateChangedCommand"/>
+    <!--require List<Fragment> -->
+    <attr format="reference" name="fragments"/>
+    <!--require FragmentManager -->
+    <attr format="reference" name="frgManager"/>
+    <!--require List<String> -->
+    <attr format="reference" name="titles"/>
+    <!--require int -->
+    <attr format="integer" name="pageLimit"/>
+    <!--require boolean -->
+    <attr format="boolean" name="scrollEnable"/>
+    <!--require Integer -->
+    <attr format="boolean" name="selectPosition"/>
+  </declare-styleable>
+
+  <declare-styleable name="SwipeRefreshLayout">
+    <!-- require Command -->
+    <attr format="reference" name="onRefresh"/>
+    <!-- require @ColorRes boolean -->
+    <attr format="boolean" name="refresh"/>
+    <!-- require @ColorRes int... -->
+    <attr format="reference" name="colorScheme"/>
+  </declare-styleable>
+
+  <declare-styleable name="RecyclerView" parent="AdapterView">
+    <!-- require RecyclerView.ItemDecoration -->
+    <attr format="reference" name="itemDecoration"/>
+  </declare-styleable>
+
+  <attr format="reference" name="items"/>
+  <attr format="reference" name="adapter"/>
+  <attr format="reference" name="onScrollChange"/>
+  <attr format="reference" name="requestFocus"/>
+  <attr format="reference" name="onClick"/>
+  <attr format="reference" name="onTouch"/>
+  <attr format="reference" name="itemBinding"/>
+  <attr format="reference" name="onScrollStateChanged"/>
+  <attr format="reference" name="movementMethod"/>
+  <attr format="reference" name="onFocusChange"/>
+
+</resources>
