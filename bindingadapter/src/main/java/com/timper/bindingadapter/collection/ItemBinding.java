@@ -1,9 +1,9 @@
 package com.timper.bindingadapter.collection;
 
+import android.databinding.ViewDataBinding;
+import android.support.annotation.LayoutRes;
 import android.util.SparseArray;
 import android.view.View;
-import androidx.annotation.LayoutRes;
-import androidx.databinding.ViewDataBinding;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -67,7 +67,7 @@ public final class ItemBinding<T> {
   }
 
   /**
-   * Set the variable id. This is normally called in {@link OnItemBind#(ItemBinding, * int, Object)}.
+   * Set the variable id. This is normally called in
    */
   public final ItemBinding<T> variableId(int variableId) {
     this.variableId = variableId;
@@ -75,7 +75,7 @@ public final class ItemBinding<T> {
   }
 
   /**
-   * Set the layout. This is normally called in {@link OnItemBind#(ItemBinding, int, * Object)}.
+   * Set the layout. This is normally called in
    */
   public final ItemBinding<T> layoutRes(@LayoutRes int layoutRes) {
     this.layoutRes = layoutRes;

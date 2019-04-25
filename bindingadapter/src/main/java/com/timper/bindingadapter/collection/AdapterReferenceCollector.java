@@ -1,6 +1,6 @@
 package com.timper.bindingadapter.collection;
 
-import androidx.databinding.ObservableList;
+import android.databinding.ObservableList;
 import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;
 import java.lang.ref.WeakReference;

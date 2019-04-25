@@ -1,22 +1,23 @@
 package com.timper.bindingadapter.recyclerview;
 
+import android.arch.lifecycle.LifecycleOwner;
+import android.arch.lifecycle.LiveData;
+import android.databinding.DataBindingUtil;
+import android.databinding.ObservableList;
+import android.databinding.OnRebindCallback;
+import android.databinding.ViewDataBinding;
+import android.support.annotation.LayoutRes;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import androidx.annotation.LayoutRes;
-import androidx.annotation.Nullable;
-import androidx.databinding.DataBindingUtil;
-import androidx.databinding.ObservableList;
-import androidx.databinding.OnRebindCallback;
-import androidx.databinding.ViewDataBinding;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.recyclerview.widget.RecyclerView;
 import com.timper.bindingadapter.collection.Utils;
 import com.timper.bindingadapter.collection.AdapterReferenceCollector;
 import com.timper.bindingadapter.collection.BindingCollectionAdapter;
 import com.timper.bindingadapter.collection.ItemBinding;
 import java.lang.ref.WeakReference;
 import java.util.List;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link RecyclerView.Adapter} that binds items to layouts using the given {@link ItemBinding}.
@@ -52,7 +53,7 @@ public class BindingRecyclerViewAdapter<T> extends RecyclerView.Adapter<Recycler
   }
 
   /**
-   * Sets the lifecycle owner of this adapter to work with {@link androidx.lifecycle.LiveData}.
+   * Sets the lifecycle owner of this adapter to work with {@link LiveData}.
    * This is normally not necessary, but due to an androidx limitation, you need to set this if
    * the containing view is <em>not</em> using databinding.
    */

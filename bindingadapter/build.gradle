@@ -54,9 +54,10 @@ dependencies {
   implementation deps.kotlin.jdk
   implementation deps.kotlin.jre
 
+  api deps.support.appcompat
   api deps.support.recyclerview
-  api deps.support.design
   api deps.android.constraint
+  api deps.support.design
 
   api deps.rx.rxAndroid
 }

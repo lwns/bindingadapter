@@ -1,12 +1,12 @@
 package com.timper.bindingadapter.recyclerview.collections;
 
-import androidx.annotation.MainThread;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.databinding.ListChangeRegistry;
-import androidx.databinding.ObservableList;
-import androidx.recyclerview.widget.DiffUtil;
-import androidx.recyclerview.widget.ListUpdateCallback;
+import android.databinding.ListChangeRegistry;
+import android.databinding.ObservableList;
+import android.support.annotation.MainThread;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v7.util.DiffUtil;
+import android.support.v7.util.ListUpdateCallback;
 import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,10 +19,10 @@ import java.util.List;
  */
 public class DiffObservableList<T> extends AbstractList<T> implements ObservableList<T> {
 
-    private final Object LIST_LOCK = new Object();
-    private List<T> list = Collections.emptyList();
-    private final DiffUtil.ItemCallback<T> callback;
-    private final boolean                  detectMoves;
+    private final Object                       LIST_LOCK    = new Object();
+    private       List<T>                      list         = Collections.emptyList();
+    private final DiffUtil.ItemCallback<T>     callback;
+    private final boolean                      detectMoves;
     private final ListChangeRegistry           listeners    = new ListChangeRegistry();
     private final ObservableListUpdateCallback listCallback = new ObservableListUpdateCallback();
 
@@ -209,7 +209,7 @@ public class DiffObservableList<T> extends AbstractList<T> implements Observable
          * DiffUtil uses this method to check equality instead of {@link Object#equals(Object)} so
          * that you can change its behavior depending on your UI.
          * <p>
-         * This method is called only if {@link #areItemsTheSame(T, T)} returns {@code true} for
+         * This method is called only if { @link # areItemsTheSame(T, T) } returns {@code true} for
          * these items.
          *
          * @param oldItem The old item.

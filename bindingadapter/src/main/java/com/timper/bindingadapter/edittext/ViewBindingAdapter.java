@@ -1,11 +1,11 @@
 package com.timper.bindingadapter.edittext;
 
 import android.content.Context;
+import android.databinding.BindingAdapter;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
-import androidx.databinding.BindingAdapter;
 import com.timper.bindingadapter.action.ParamCommand;
 
 public final class ViewBindingAdapter {

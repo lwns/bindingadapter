@@ -1,8 +1,8 @@
 package com.timper.bindingadapter.collection.collections;
 
-import androidx.annotation.NonNull;
-import androidx.databinding.ListChangeRegistry;
-import androidx.databinding.ObservableList;
+import android.databinding.ListChangeRegistry;
+import android.databinding.ObservableList;
+import android.support.annotation.NonNull;
 import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.Collections;

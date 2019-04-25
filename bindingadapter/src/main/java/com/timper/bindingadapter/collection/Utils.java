@@ -1,17 +1,15 @@
 package com.timper.bindingadapter.collection;
 
+import android.arch.lifecycle.LifecycleOwner;
 import android.content.Context;
 import android.content.res.Resources;
+import android.databinding.DataBindingUtil;
+import android.databinding.ViewDataBinding;
 import android.os.Looper;
+import android.support.annotation.LayoutRes;
+import android.support.annotation.MainThread;
+import android.support.annotation.Nullable;
 import android.view.View;
-import androidx.annotation.LayoutRes;
-import androidx.annotation.MainThread;
-import androidx.annotation.Nullable;
-import androidx.databinding.DataBindingUtil;
-import androidx.databinding.ViewDataBinding;
-import androidx.lifecycle.LifecycleOwner;
-import com.timper.bindingadapter.collection.BindingCollectionAdapter;
-import com.timper.bindingadapter.collection.ItemBinding;
 import java.lang.reflect.Field;
 
 /**
@@ -26,7 +24,7 @@ public class Utils {
     private static boolean fieldFaild;
 
     /**
-     * Helper to throw an exception when {@link androidx.databinding.ViewDataBinding#setVariable(int,
+     * Helper to throw an exception when {@link ViewDataBinding#setVariable(int,
      * Object)} returns false.
      */
     public static void throwMissingVariable(ViewDataBinding binding, int bindingVariable, @LayoutRes int layoutRes) {

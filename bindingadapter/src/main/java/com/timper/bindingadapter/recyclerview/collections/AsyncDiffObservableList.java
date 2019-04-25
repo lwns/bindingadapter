@@ -1,13 +1,13 @@
 package com.timper.bindingadapter.recyclerview.collections;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.databinding.ListChangeRegistry;
-import androidx.databinding.ObservableList;
-import androidx.recyclerview.widget.AsyncDifferConfig;
-import androidx.recyclerview.widget.AsyncListDiffer;
-import androidx.recyclerview.widget.DiffUtil;
-import androidx.recyclerview.widget.ListUpdateCallback;
+import android.databinding.ListChangeRegistry;
+import android.databinding.ObservableList;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v7.recyclerview.extensions.AsyncDifferConfig;
+import android.support.v7.recyclerview.extensions.AsyncListDiffer;
+import android.support.v7.util.DiffUtil;
+import android.support.v7.util.ListUpdateCallback;
 import java.util.AbstractList;
 import java.util.List;
 import java.util.ListIterator;

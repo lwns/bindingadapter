@@ -1,8 +1,8 @@
 package com.timper.bindingadapter.swiperefresh;
 
-import androidx.annotation.ColorRes;
-import androidx.databinding.BindingAdapter;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import android.databinding.BindingAdapter;
+import android.support.annotation.ColorRes;
+import android.support.v4.widget.SwipeRefreshLayout;
 import com.timper.bindingadapter.action.Command;
 
 public class ViewBindingAdapter {

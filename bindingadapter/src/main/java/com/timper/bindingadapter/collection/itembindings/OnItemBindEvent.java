@@ -1,6 +1,6 @@
 package com.timper.bindingadapter.collection.itembindings;
 
-import androidx.annotation.LayoutRes;
+import android.support.annotation.LayoutRes;
 import com.timper.bindingadapter.collection.ItemBinding;
 import com.timper.bindingadapter.collection.OnItemBind;
 import java.util.HashMap;

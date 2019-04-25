@@ -1,16 +1,14 @@
 package com.timper.bindingadapter.collection;
 
+import android.databinding.ViewDataBinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
-import androidx.databinding.ViewDataBinding;
 
 /**
  * @author op
  * @version 1.0
- * @description
- * @createDate 2016/10/10
  */
 public class BindingLoopViewPagerAdapter<T> extends BindingViewPagerAdapter<T> {
 

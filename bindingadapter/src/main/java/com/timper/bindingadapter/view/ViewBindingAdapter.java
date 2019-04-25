@@ -1,9 +1,9 @@
 package com.timper.bindingadapter.view;
 
+import android.databinding.BindingAdapter;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import androidx.databinding.BindingAdapter;
 import com.timper.bindingadapter.action.Command;
 import com.timper.bindingadapter.action.ParamCommand;
 import com.timper.bindingadapter.action.ResponseCommand;
