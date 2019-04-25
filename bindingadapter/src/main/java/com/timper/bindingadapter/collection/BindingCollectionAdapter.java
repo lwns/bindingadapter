@@ -30,7 +30,11 @@ public interface BindingCollectionAdapter<T> {
     /**
      * Sets the adapter's items. These items will be displayed based on the {@link ItemBinding}. If
      * you pass in an {@link ObservableList} the adapter will also update itself based on that
+<<<<<<< HEAD
      * list's changes.  Note that the adapter will keep a direct reference to the given list.
+=======
+     * list's changes. <br/> Note that the adapter will keep a direct reference to the given list.
+>>>>>>> 6ea646b47636e16aeebbf66eccb31e76560352d2
      * Any changes to it <em>must</em> happen on the main thread. Additionally, if you are not using
      * an {@code ObservableList}, you <em>must</em> call {@code notifyDataSetChanged()} or one of
      * the related methods.
