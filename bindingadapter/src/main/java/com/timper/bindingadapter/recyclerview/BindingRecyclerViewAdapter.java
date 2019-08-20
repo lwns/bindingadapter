@@ -7,6 +7,7 @@ import android.databinding.ObservableList;
 import android.databinding.OnRebindCallback;
 import android.databinding.ViewDataBinding;
 import android.support.annotation.LayoutRes;
+import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +18,6 @@ import com.timper.bindingadapter.collection.BindingCollectionAdapter;
 import com.timper.bindingadapter.collection.ItemBinding;
 import java.lang.ref.WeakReference;
 import java.util.List;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link RecyclerView.Adapter} that binds items to layouts using the given {@link ItemBinding}.

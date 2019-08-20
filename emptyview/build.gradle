@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
 
 android {
 
@@ -34,12 +33,6 @@ android {
     abortOnError false
   }
 
-  dataBinding {
-    enabled = true
-  }
-
-  dataBinding.enabled = true
-
   repositories {
     flatDir {
       dirs 'libs'
@@ -50,13 +43,10 @@ dependencies {
 
   api fileTree(dir: 'libs', include: ['*.jar'])
 
-  implementation deps.support.appcompat
-  implementation deps.support.recyclerview
-  implementation deps.android.constraint
-  implementation deps.support.design
   implementation deps.kotlin.jdk
   implementation deps.kotlin.jre
 
-  implementation deps.rx.rxAndroid
+  api deps.support.appcompat
+
 }
 apply from: rootProject.file('gradle/jcenter-push.gradle')

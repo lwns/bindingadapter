@@ -9,7 +9,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import com.timper.bindingadapter.R;
 import com.timper.bindingadapter.action.ParamCommand;
-import com.timper.bindingadapter.collection.BindingCollectionAdapter;
 import com.timper.bindingadapter.collection.ItemBinding;
 import com.timper.bindingadapter.recyclerview.collections.AsyncDiffObservableList;
 import io.reactivex.subjects.PublishSubject;

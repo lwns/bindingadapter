@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">emptyview</string>
+
+  <string name="app.empty.nonet">网络不给力</string>
+  <string name="app.empty.nonet.try">请检查设置或点击刷新进行重试</string>
+  <string name="app.empty.nonet.refresh">刷新</string>
+  <string name="app.empty.refresh.nodata">暂无</string>
+</resources>

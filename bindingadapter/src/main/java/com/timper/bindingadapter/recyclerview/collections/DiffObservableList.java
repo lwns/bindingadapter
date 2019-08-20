@@ -209,11 +209,7 @@ public class DiffObservableList<T> extends AbstractList<T> implements Observable
          * DiffUtil uses this method to check equality instead of {@link Object#equals(Object)} so
          * that you can change its behavior depending on your UI.
          * <p>
-<<<<<<< HEAD
          * This method is called only if { @link # areItemsTheSame(T, T) } returns {@code true} for
-=======
-         * This method is called only if {@link #areItemsTheSame(T, T)} returns {@code true} for
->>>>>>> 6ea646b47636e16aeebbf66eccb31e76560352d2
          * these items.
          *
          * @param oldItem The old item.

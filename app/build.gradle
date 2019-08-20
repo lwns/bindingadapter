@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: "kotlin-kapt"
 
 android {
     compileSdkVersion versions.compileSdk
@@ -12,6 +12,12 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        // enabled svg support
+        vectorDrawables.useSupportLibrary = true
+        defaultConfig {
+            multiDexEnabled true
+        }
     }
     buildTypes {
         release {
@@ -19,22 +25,41 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    dataBinding {
-        enabled = true
-    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    dataBinding.enabled = true
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+gradle.projectsEvaluated {
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xmaxerrs" << "500" // for dataBinding error printing
     }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':bindingadapter')
+//    api(name: 'bindingadapter-debug', ext: 'aar')
     implementation deps.kotlin.lib
 
     implementation deps.support.appcompat
+    implementation deps.support.recyclerview
+    implementation deps.android.constraint
+    implementation deps.support.design
+
+//    kapt "androidx.databinding:databinding-compiler:3.2.1"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
