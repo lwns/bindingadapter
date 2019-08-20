@@ -1,4 +1,4 @@
-package com.timper.emptyview;
+package com.timper.view;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

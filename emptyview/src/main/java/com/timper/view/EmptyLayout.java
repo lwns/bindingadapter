@@ -1,4 +1,4 @@
-package com.timper.emptyview;
+package com.timper.view;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -19,7 +19,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import static com.timper.emptyview.EmptyLayout.Status.NO_NETWORK;
+import static com.timper.view.EmptyLayout.Status.NO_NETWORK;
 
 public class EmptyLayout extends FrameLayout {
 
