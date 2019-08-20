@@ -1,4 +1,4 @@
-package com.timper.view;
+package com.timper.emptyview;
 
 import org.junit.Test;
 

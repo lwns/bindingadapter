@@ -50,9 +50,12 @@ gradle.projectsEvaluated {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':bindingadapter')
+//    implementation project(':bindingadapter')
 //    api(name: 'bindingadapter-debug', ext: 'aar')
     implementation deps.kotlin.lib
+
+    implementation "com.timper:bindingcollectionadapter:0.0.5"
+
 
     implementation deps.support.appcompat
     implementation deps.support.recyclerview
