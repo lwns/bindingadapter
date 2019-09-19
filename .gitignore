@@ -13,11 +13,8 @@ out/
 
 /build
 
-<<<<<<< HEAD
 /local.properties
-=======
 local.properties
->>>>>>> 6ea646b47636e16aeebbf66eccb31e76560352d2
 
 *.log
 
@@ -38,8 +35,4 @@ local.properties
 
 
 gradlew
-<<<<<<< HEAD
 gradlew.bat
-=======
-gradlew.bat
->>>>>>> 6ea646b47636e16aeebbf66eccb31e76560352d2

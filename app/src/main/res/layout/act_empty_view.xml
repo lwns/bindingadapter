@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".featurn.emptyview.EmptyViewActivity"
+    >
+
+  <com.timper.view.emptyview.EmptyLayout
+      android:id="@+id/empty_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:el_info="暂无筛选内容"
+      app:el_textColor="#91959A"
+      app:el_textSize="13sp"
+      ></com.timper.view.emptyview.EmptyLayout>
+
+  <Button
+      android:id="@+id/btn_change"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="改变状态"
+      android:onClick="changeStaus"
+      />
+
+
+</android.support.constraint.ConstraintLayout>

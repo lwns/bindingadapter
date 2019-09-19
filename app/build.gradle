@@ -4,67 +4,66 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion versions.compileSdk
+  compileSdkVersion versions.compileSdk
+  defaultConfig {
+    applicationId "com.timper.myapplication"
+    minSdkVersion versions.minSdk
+    targetSdkVersion versions.compileSdk
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    multiDexEnabled true
+    // enabled svg support
+    vectorDrawables.useSupportLibrary = true
     defaultConfig {
-        applicationId "com.timper.myapplication"
-        minSdkVersion versions.minSdk
-        targetSdkVersion versions.compileSdk
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        multiDexEnabled true
-        // enabled svg support
-        vectorDrawables.useSupportLibrary = true
-        defaultConfig {
-            multiDexEnabled true
-        }
+      multiDexEnabled true
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
+  }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    dataBinding {
-        enabled = true
-    }
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+  dataBinding {
+    enabled = true
+  }
 
-    dataBinding.enabled = true
-    repositories {
-        flatDir {
-            dirs 'libs'
-        }
+  repositories {
+    flatDir {
+      dirs 'libs'
     }
+  }
 }
 
 gradle.projectsEvaluated {
-    tasks.withType(JavaCompile) {
-        options.compilerArgs << "-Xmaxerrs" << "500" // for dataBinding error printing
-    }
+  tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xmaxerrs" << "500" // for dataBinding error printing
+  }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-//    implementation project(':bindingadapter')
-//    api(name: 'bindingadapter-debug', ext: 'aar')
-    implementation deps.kotlin.lib
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+  //    implementation project(':bindingadapter')
+  implementation "com.timper:bindingadapter:0.0.9"
+  //  implementation "com.timper:emptyview:0.0.7"
+  implementation project(':view-loading')
+  implementation project(':view-emptyview')
+  implementation deps.kotlin.lib
 
-    implementation "com.timper:bindingcollectionadapter:0.0.5"
+  implementation deps.support.appcompat
+  implementation deps.support.recyclerview
+  implementation deps.android.constraint
+  implementation deps.support.design
+  implementation deps.rx.rxAndroid
 
-
-    implementation deps.support.appcompat
-    implementation deps.support.recyclerview
-    implementation deps.android.constraint
-    implementation deps.support.design
-
-//    kapt "androidx.databinding:databinding-compiler:3.2.1"
-
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+  implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+  testImplementation 'junit:junit:4.12'
+  androidTestImplementation 'com.android.support.test:runner:1.0.2'
+  androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }

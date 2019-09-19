@@ -6,7 +6,7 @@
   <data>
     <variable
         name="view"
-        type="com.timper.myapplication.MainActivity"
+        type="com.timper.myapplication.featurn.bindingadapter.MainActivity"
         />
 
     <import type="com.timper.bindingadapter.recyclerview.LayoutManagers"/>
@@ -14,7 +14,7 @@
   <android.support.constraint.ConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      tools:context=".MainActivity"
+      tools:context=".featurn.bindingadapter.MainActivity"
       >
 
     <android.support.v7.widget.RecyclerView
