@@ -3,7 +3,7 @@
 buildscript {
   ext.versions = ['minSdk'        : 19,
                   'compileSdk'    : 28,
-                  'androidPlugin' : '3.1.2',
+                  'androidPlugin' : '3.2.1',
                   'kotlin'        : '1.2.51',
                   'constraint'    : '1.1.2',
                   'rxAndroid'     : '2.0.1',

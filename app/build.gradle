@@ -54,6 +54,7 @@ dependencies {
   //  implementation "com.timper:emptyview:0.0.7"
   implementation project(':view-loading')
   implementation project(':view-emptyview')
+  implementation project(':util-logger')
   implementation deps.kotlin.lib
 
   implementation deps.support.appcompat

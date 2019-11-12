@@ -1,1 +1,1 @@
-include ':app', ':bindingadapter', ':view-emptyview', ':view-base', ':view-loading'
+include ':app', ':bindingadapter', ':view-emptyview', ':view-base', ':view-loading', ':util-logger'
