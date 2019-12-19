@@ -1,6 +1,6 @@
 package com.timper.bindingadapter.view;
 
-import android.databinding.BindingAdapter;
+import androidx.databinding.BindingAdapter;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;

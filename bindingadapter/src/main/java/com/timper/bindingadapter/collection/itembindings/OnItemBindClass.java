@@ -1,7 +1,7 @@
 package com.timper.bindingadapter.collection.itembindings;
 
-import android.support.annotation.LayoutRes;
-import android.support.annotation.NonNull;
+import androidx.annotation.LayoutRes;
+import androidx.annotation.NonNull;
 import com.timper.bindingadapter.collection.BindingListViewAdapter;
 import com.timper.bindingadapter.collection.ItemBinding;
 import com.timper.bindingadapter.collection.OnItemBind;

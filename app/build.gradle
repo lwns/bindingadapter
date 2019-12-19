@@ -11,7 +11,7 @@ android {
     targetSdkVersion versions.compileSdk
     versionCode 1
     versionName "1.0"
-    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     multiDexEnabled true
     // enabled svg support
     vectorDrawables.useSupportLibrary = true
@@ -49,12 +49,12 @@ gradle.projectsEvaluated {
 
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
-  //    implementation project(':bindingadapter')
-  implementation "com.timper:bindingadapter:0.0.9"
+      implementation project(':bindingadapter')
+//  implementation "com.timper:bindingadapter:0.0.9"
   //  implementation "com.timper:emptyview:0.0.7"
   implementation project(':view-loading')
   implementation project(':view-emptyview')
-  implementation project(':util-logger')
+//  implementation project(':util-logger')
   implementation deps.kotlin.lib
 
   implementation deps.support.appcompat
@@ -63,8 +63,8 @@ dependencies {
   implementation deps.support.design
   implementation deps.rx.rxAndroid
 
-  implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+  implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
   testImplementation 'junit:junit:4.12'
-  androidTestImplementation 'com.android.support.test:runner:1.0.2'
-  androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+  androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+  androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
 }
