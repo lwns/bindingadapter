@@ -1,7 +1,7 @@
 package com.timper.bindingadapter.collection;
 
-import android.databinding.ViewDataBinding;
-import android.support.annotation.LayoutRes;
+import androidx.databinding.ViewDataBinding;
+import androidx.annotation.LayoutRes;
 import android.util.SparseArray;
 import android.view.View;
 import java.util.HashMap;

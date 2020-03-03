@@ -10,21 +10,34 @@
         />
 
     <import type="com.timper.bindingadapter.recyclerview.LayoutManagers"/>
+
   </data>
-  <android.support.constraint.ConstraintLayout
+  <androidx.constraintlayout.widget.ConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       tools:context=".featurn.bindingadapter.MainActivity"
       >
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/sc_switch_compat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:longClickable="false"
+        android:textColor="#000"
+        android:textOff="Off"
+        android:textOn="On"
+        app:showText="true"
+        app:switchPadding="5dp"/>
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:itemBinding="@{view.itemBinding}"
         app:items="@{view.datas}"
         app:layoutManager="@{LayoutManagers.linear()}"
         >
-    </android.support.v7.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
-  </android.support.constraint.ConstraintLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -1,6 +1,6 @@
 package com.timper.view.emptyview;
 
-import android.databinding.BindingAdapter;
+import androidx.databinding.BindingAdapter;
 import com.timper.bindingadapter.action.Command;
 
 public final class ViewBindingAdapter {

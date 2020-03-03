@@ -1,6 +1,6 @@
 package com.timper.bindingadapter.collection;
 
-import android.support.annotation.IdRes;
+import androidx.annotation.IdRes;
 import java.util.Map;
 
 /**

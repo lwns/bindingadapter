@@ -1,8 +1,8 @@
 package com.timper.myapplication.featurn.bindingadapter
 
-import android.databinding.DataBindingUtil
+import androidx.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.timper.bindingadapter.collection.itembindings.OnItemBindClass
 import com.timper.bindingadapter.collection.itembindings.OnItemBindEvent
 import com.timper.myapplication.BR

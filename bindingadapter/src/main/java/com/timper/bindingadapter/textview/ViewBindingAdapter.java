@@ -1,6 +1,6 @@
 package com.timper.bindingadapter.textview;
 
-import android.databinding.BindingAdapter;
+import androidx.databinding.BindingAdapter;
 import android.text.method.MovementMethod;
 import android.widget.TextView;
 

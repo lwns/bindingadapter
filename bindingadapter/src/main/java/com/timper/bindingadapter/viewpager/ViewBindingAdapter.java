@@ -1,10 +1,10 @@
 package com.timper.bindingadapter.viewpager;
 
-import android.databinding.BindingAdapter;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
+import androidx.databinding.BindingAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 import com.timper.bindingadapter.action.ParamCommand;
 import java.util.ArrayList;
 import java.util.List;

@@ -1,11 +1,11 @@
 package com.timper.bindingadapter.recyclerview;
 
-import android.databinding.BindingAdapter;
-import android.databinding.BindingConversion;
-import android.support.v7.recyclerview.extensions.AsyncDifferConfig;
-import android.support.v7.util.DiffUtil;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.databinding.BindingAdapter;
+import androidx.databinding.BindingConversion;
+import androidx.recyclerview.widget.AsyncDifferConfig;
+import androidx.recyclerview.widget.DiffUtil;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import com.timper.bindingadapter.R;
 import com.timper.bindingadapter.action.ParamCommand;

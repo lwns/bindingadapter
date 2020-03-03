@@ -80,8 +80,8 @@ if (project.hasProperty("android")) {
   }
 
   afterEvaluate {
-    javadoc.classpath += files(android.libraryVariants.collect { variant -> variant.javaCompile.classpath.files
-    })
+//    javadoc.classpath += files(android.libraryVariants.collect { variant -> variant.javaCompile.classpath.files
+//    })
   }
 } else {
   // Java libraries
